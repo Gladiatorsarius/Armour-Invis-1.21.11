@@ -25,6 +25,7 @@ public class SwordssmpModPotions {
 	}
 
 	private static Holder<Potion> register(String registryname, Potion element) {
-		return Holder.direct(Registry.register(BuiltInRegistries.POTION, Identifier.fromNamespaceAndPath(SwordssmpMod.MODID, registryname), element));
+		Identifier id = Identifier.fromNamespaceAndPath(SwordssmpMod.MODID, registryname);
+		return Registry.registerForHolder(BuiltInRegistries.POTION, id, element);
 	}
 }

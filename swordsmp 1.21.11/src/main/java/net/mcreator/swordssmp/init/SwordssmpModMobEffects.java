@@ -25,6 +25,7 @@ public class SwordssmpModMobEffects {
 	}
 
 	private static Holder<MobEffect> register(String registryname, Supplier<MobEffect> element) {
-		return Holder.direct(Registry.register(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(SwordssmpMod.MODID, registryname), element.get()));
+		Identifier id = Identifier.fromNamespaceAndPath(SwordssmpMod.MODID, registryname);
+		return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, id, element.get());
 	}
 }
