@@ -38,6 +38,7 @@ public class SwordssmpModTabs {
 			tabData.accept(SwordssmpModItems.TEST_ROD);
 			tabData.accept(SwordssmpModItems.SWIFT_BLUE);
 			tabData.accept(SwordssmpModItems.POWERFUL_RED);
+			tabData.accept(SwordssmpModItems.DESCENDING_DARK);
 		});
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(tabData -> {
 			tabData.accept(SwordssmpModItems.WIND_BLADE);
@@ -58,6 +59,7 @@ public class SwordssmpModTabs {
 			tabData.accept(SwordssmpModItems.AMETHYST_SWORD);
 			tabData.accept(SwordssmpModItems.SWIFT_BLUE);
 			tabData.accept(SwordssmpModItems.POWERFUL_RED);
+			tabData.accept(SwordssmpModItems.DESCENDING_DARK);
 		});
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(tabData -> {
 			tabData.accept(SwordssmpModItems.SMELTER_PICKAXE);

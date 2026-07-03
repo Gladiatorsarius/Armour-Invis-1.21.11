@@ -44,6 +44,7 @@ public class SwordssmpModItems {
 	public static Item THE_ABOMINATION;
 	public static Item SWIFT_BLUE;
 	public static Item POWERFUL_RED;
+	public static Item DESCENDING_DARK;
 
 	public static void load() {
 		WIND_BLADE = register("wind_blade", WindBladeItem::new);
@@ -75,6 +76,7 @@ public class SwordssmpModItems {
 		THE_ABOMINATION = register("the_abomination", TheAbominationItem::new);
 		SWIFT_BLUE = register("swift_blue", DualBlade2Item::new);
 		POWERFUL_RED = register("powerful_red", DualBlade1Item::new);
+		DESCENDING_DARK = register("descending_dark", DescendingDarkItem::new);
 	}
 
 	// Start of user code block custom items
