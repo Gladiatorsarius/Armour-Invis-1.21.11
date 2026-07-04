@@ -20,6 +20,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.swordssmp.procedures.DescendingDarkOnUseTickProcedure;
 import net.mcreator.swordssmp.procedures.DescendingDarkReleaseUsingProcedure;
+import net.mcreator.swordssmp.procedures.DescendingDarkRightclickedProcedure;
 import net.mcreator.swordssmp.procedures.DescendingDarkToolInHandTickProcedure;
 
 public class DescendingDarkItem extends Item {
@@ -36,8 +37,7 @@ public class DescendingDarkItem extends Item {
 
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
-		entity.startUsingItem(hand);
-		return InteractionResult.CONSUME;
+		return DescendingDarkRightclickedProcedure.execute(world, entity, hand);
 	}
 
 	@Override
