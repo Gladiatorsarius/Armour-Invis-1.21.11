@@ -36,6 +36,7 @@ public class DescendingDarkItem extends Item {
 
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		entity.startUsingItem(hand);
 		return InteractionResult.CONSUME;
 	}
 

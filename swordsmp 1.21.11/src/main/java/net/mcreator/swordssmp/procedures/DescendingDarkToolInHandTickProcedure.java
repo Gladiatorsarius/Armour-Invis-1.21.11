@@ -18,7 +18,10 @@ public class DescendingDarkToolInHandTickProcedure {
 		ItemStack mainHand = player.getMainHandItem();
 		if (mainHand.getItem() != SwordssmpModItems.DESCENDING_DARK || !player.isUsingItem()) {
 			if (player.getAttribute(Attributes.GRAVITY) != null) {
-				player.getAttribute(Attributes.GRAVITY).setBaseValue(0.08);
+				player.getAttribute(Attributes.GRAVITY).setBaseValue(player.getAttribute(Attributes.GRAVITY).getAttribute().value().getDefaultValue());
+			}
+			if (player.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER) != null) {
+				player.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).setBaseValue(player.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).getAttribute().value().getDefaultValue());
 			}
 		}
 	}
