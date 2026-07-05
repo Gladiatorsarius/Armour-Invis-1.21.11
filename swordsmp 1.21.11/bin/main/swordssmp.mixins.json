@@ -14,7 +14,11 @@
     "ExperienceOrbMixin",
     "PrimedTntMixin"
   ],
-  "client": [],
+  "client": [
+    "HumanoidArmorLayerMixin",
+    "LivingEntityRenderStateMixin",
+    "LivingEntityRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
